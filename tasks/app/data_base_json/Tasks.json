@@ -1,0 +1,24 @@
+{
+  "tasks": [
+    {
+      "uuid": 0,
+      "title": "Login",
+      "description": "Crear login CRUD",
+      "state": "2",
+      "userId": "4",
+      "comment": "",
+      "initDate": "24-02-2022",
+      "finishDate": "27-02-2023"
+    },
+    {
+      "uuid": 1,
+      "title": "Usuarios",
+      "description": "Crud de usuarios",
+      "state": "2",
+      "userId": "4",
+      "comment": "",
+      "initDate": "24-02-2023",
+      "finishDate": "24-02-2024"
+    }
+  ]
+}

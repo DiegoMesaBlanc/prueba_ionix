@@ -1,0 +1,336 @@
+{
+	"info": {
+		"_postman_id": "a2467961-5c33-4af3-a956-5a354c057db3",
+		"name": "Ionix",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4370438"
+	},
+	"item": [
+		{
+			"name": "Auth - Users",
+			"item": [
+				{
+					"name": "http://localhost:3000/user/authentication",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userName\": \"Diego\",\n    \"password\": \"Ionix2023+\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/authentication",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"authentication"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/user/logout",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiMSIsInVzZXIiOiJEaWVnbyIsInByb2ZpbGUiOiIiLCJpYXQiOjE2Nzc0MjQ1NTUsImcCI6MTY3NzQyNDg1NX0.HgrUO7DmDsZ97mjXAsnNESyT2bKeHNp8w6182V76Ox8",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/user/logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/user",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiMSIsInVzZXIiOiJEaWVnbyIsInByb2ZpbGUiOiIxIiwiaWF0IjoxNjc3NTE2NjI1LCJleHAiOjE2Nzc1MjAyMjV9.-PL1vnklw3vS4BIVzFZeRNlgxdJs2Te-sYtpplMA4eM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user\": \"Alberto\",\n    \"profile\": \"2\",\n    \"state\": \"Activo\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/user/password",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userId\": 1,\n    \"lastPassword\": \"Ionix2023+First\",\n    \"newPassword\": \"Ionix2023+\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/password",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"password"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tasks",
+			"item": [
+				{
+					"name": "http://localhost:3001/task/create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiMSIsInVzZXIiOiJEaWVnbyIsInByb2ZpbGUiOiIxIiwiaWF0IjoxNjc3NDU4NTI3LCJleHAiOjE2Nzc0NjIxMjd9.yVjdoToyiueIM8UpExlfTCSrF0GqF6z73kwnlEGvUtE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Daily\",\n    \"description\": \"Realizar daily diariamente\",\n    \"finishDate\": \"29-02-2024\",\n    \"user\": { \"id\": 3, \"profile\": \"2\" }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/task",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"task"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3001/task/taskList",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiMyIsInVzZXIiOiJKb2hhbiIsInByb2ZpbGUiOiIyIiwiaWF0IjoxNjc3NDY1ODg4LCJleHAiOjE2Nzc0Njk0ODh9.kionizwOWF50Ggd3qNKNHjazqyw8NTCEyVXUcA3OsBc",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3001/task/taskList",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"task",
+								"taskList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3001/task/assign",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiMSIsInVzZXIiOiJEaWVnbyIsInByb2ZpbGUiOiIxIiwiaWF0IjoxNjc3NDYwNTQ2LCJleHAiOjE2Nzc0NjQxNDZ9.56HI5dK2bg008jt-ScpNbsGXeQlK1LMpSfIgmhQ5aIo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user\": { \"id\": 3, \"profile\": \"3\" },\n    \"taskId\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/task/assign",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"task",
+								"assign"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3001/task",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiMSIsInVzZXIiOiJEaWVnbyIsInByb2ZpbGUiOiIxIiwiaWF0IjoxNjc3NDYzODc5LCJleHAiOjE2Nzc0Njc0Nzl9.j0WE3Lvple70v2fGe5dh6CrGNAsZFBtovW1eamc4Xmc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"taskId\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/task",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"task"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3001/task",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiMSIsInVzZXIiOiJEaWVnbyIsInByb2ZpbGUiOiIxIiwiaWF0IjoxNjc3NDY0Nzk4LCJleHAiOjE2Nzc0NjgzOTh9.Cgyw3G6E_ww6yk-0yS7IwWbKhZwpy07tjXeKcy845S0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"uuid\": 1,\n    \"title\": \"Usuarios\",\n    \"description\": \"Sin nada que hacer\",\n    \"state\": \"1\",\n    \"userId\": \"3\",\n    \"initDate\": \"24-02-2023\",\n    \"finishDate\": \"24-02-2024\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/task",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"task"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3001/task/taskList",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiNCIsInVzZXIiOiJFZGlzc29uIiwicHJvZmlsZSI6IjMiLCJpYXQiOjE2Nzc0NzAwMzgsImV4cCI6MTY3NzQ3MzYzOH0.SD3zvJUl3_63PwkaQZCpGS-14q55TDiwdbJKSfSgFsg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"uuid\": 0,\n    \"title\": \"Tareas\",\n    \"description\": \"No hay mas tareas\",\n    \"state\": \"2\",\n    \"userId\": \"4\",\n    \"comment\": \"Cambio de tarea\",\n    \"initDate\": \"20-02-2024\",\n    \"finishDate\": \"24-02-2024\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/task/taskList",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"task",
+								"taskList"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

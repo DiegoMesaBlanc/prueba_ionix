@@ -13,3 +13,6 @@ npm-debug.log
 .env
 .log
 log.txt
+
+
+package-lock.json

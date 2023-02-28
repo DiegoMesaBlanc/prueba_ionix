@@ -44,6 +44,10 @@ de comandos **npm install** para descargar nuestras dependencias en cada uno de 
 
 
 ## Autores ✒️
+Contraseña Administrador = Ionix2023+
+
+
+## Autores ✒️
 
 * **Diego Mesa** - *Lider Técnico*
 

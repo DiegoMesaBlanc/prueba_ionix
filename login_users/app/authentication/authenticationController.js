@@ -16,7 +16,8 @@ const codes = require("../common/enums/codesResponse");
 exports.userAuthentication = async (request, response) => {
   try {
     const user = { userName: request.body.userName || "", password: request.body.password || "" };
-    const pass = await encrypt.generateHashPassword(user.password);
+    // const pass = await encrypt.generateHashPassword(user.password);
+    // console.log(pass);
 
     const res = await operations.userAuthentication(user);
 

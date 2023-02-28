@@ -41,7 +41,7 @@ services.filterUser = async (user) => {
       }
     }
 
-    return await message;
+    return message;
   } catch (error) {
     loggerManagement.insertLog(new Date().getTime(), '', 'SERVICE', '', JSON.stringify(error, Object.getOwnPropertyNames(error)));
     return await error;
@@ -65,7 +65,7 @@ services.logOutUser = async (uuid) => {
       message = { code: codes.SUCCESS };
     }
 
-    return await message;
+    return message;
   } catch (error) {
     loggerManagement.insertLog(new Date().getTime(), '', 'SERVICE', '', JSON.stringify(error, Object.getOwnPropertyNames(error)));
     return await error;
@@ -99,7 +99,7 @@ services.createUserService = async (data) => {
       }
     }
 
-    return await message;
+    return message;
   } catch (error) {
     loggerManagement.insertLog(new Date().getTime(), '', 'SERVICE', '', JSON.stringify(error, Object.getOwnPropertyNames(error)));
     return await error;
@@ -131,7 +131,7 @@ services.updatePasswordService = async (data) => {
       message.code = codes.DATA_NOT_FOUND;
     }
 
-    return await message;
+    return message;
   } catch (error) {
     loggerManagement.insertLog(new Date().getTime(), '', 'SERVICE', '', JSON.stringify(error, Object.getOwnPropertyNames(error)));
     return await error;

@@ -1,11 +1,11 @@
 {
   "users": [
     {
-      "uuid": "1",
+      "uuid": 1,
       "user": "Diego",
-      "password": "$2b$10$YE2wZ1ZBQrXf.Wk3An8x5uKY.HITLJgPiIxfJ9i/gspKz8Km9NgL6",
+      "password": "$2b$10$0U5lXftapphRBg3XT/mCZuAAD3QGEIueRDmCoBFwNX5A56UPXbjfO",
       "stateLogin": "",
-      "last3Pass": "",
+      "last3Pass": [],
       "profile": "1",
       "token": "",
       "insertDate": "26-02-2023",
@@ -13,11 +13,13 @@
       "state": "Activo"
     },
     {
-      "uuid": "2",
+      "uuid": 2,
       "user": "Andres",
-      "password": "$2b$10$YE2wZ1ZBQrXf.Wk3An8x5uKY.HITLJgPiIxfJ9i/gspKz8Km9NgL6",
+      "password": "$2b$10$0U5lXftapphRBg3XT/mCZuAAD3QGEIueRDmCoBFwNX5A56UPXbjfO",
       "stateLogin": "",
-      "last3Pass": "",
+      "last3Pass": [
+        "$2b$10$0U5lXftapphRBg3XT/mCZuAAD3QGEIueRDmCoBFwNX5A56UPXbjfO"
+      ],
       "profile": "2",
       "token": "",
       "insertDate": "26-02-2023",
@@ -25,11 +27,11 @@
       "state": "Activo"
     },
     {
-      "uuid": "3",
+      "uuid": 3,
       "user": "Johan",
-      "password": "$2b$10$YE2wZ1ZBQrXf.Wk3An8x5uKY.HITLJgPiIxfJ9i/gspKz8Km9NgL6",
+      "password": "$2b$10$0U5lXftapphRBg3XT/mCZuAAD3QGEIueRDmCoBFwNX5A56UPXbjfO",
       "stateLogin": "",
-      "last3Pass": "",
+      "last3Pass": [],
       "profile": "2",
       "token": "",
       "insertDate": "26-02-2023",
@@ -37,11 +39,11 @@
       "state": "Activo"
     },
     {
-      "uuid": "4",
+      "uuid": 4,
       "user": "Edisson",
-      "password": "$2b$10$YE2wZ1ZBQrXf.Wk3An8x5uKY.HITLJgPiIxfJ9i/gspKz8Km9NgL6",
+      "password": "$2b$10$0U5lXftapphRBg3XT/mCZuAAD3QGEIueRDmCoBFwNX5A56UPXbjfO",
       "stateLogin": "",
-      "last3Pass": "",
+      "last3Pass": [],
       "profile": "3",
       "token": "",
       "insertDate": "26-02-2023",
@@ -49,11 +51,11 @@
       "state": "Activo"
     },
     {
-      "uuid": "5",
+      "uuid": 5,
       "user": "Javier",
-      "password": "$2b$10$YE2wZ1ZBQrXf.Wk3An8x5uKY.HITLJgPiIxfJ9i/gspKz8Km9NgL6",
+      "password": "$2b$10$0U5lXftapphRBg3XT/mCZuAAD3QGEIueRDmCoBFwNX5A56UPXbjfO",
       "stateLogin": "",
-      "last3Pass": "",
+      "last3Pass": [],
       "profile": "3",
       "token": "",
       "insertDate": "26-02-2023",
@@ -61,11 +63,11 @@
       "state": "Activo"
     },
     {
-      "uuid": "6",
+      "uuid": 6,
       "user": "Camilo",
-      "password": "$2b$10$YE2wZ1ZBQrXf.Wk3An8x5uKY.HITLJgPiIxfJ9i/gspKz8Km9NgL6",
+      "password": "$2b$10$0U5lXftapphRBg3XT/mCZuAAD3QGEIueRDmCoBFwNX5A56UPXbjfO",
       "stateLogin": "",
-      "last3Pass": "",
+      "last3Pass": [],
       "profile": "3",
       "token": "",
       "insertDate": "26-02-2023",

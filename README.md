@@ -45,6 +45,7 @@ de comandos **npm install** para descargar nuestras dependencias en cada uno de 
 
 ## Autores ✒️
 Contraseña Administrador = Ionix2023+
+Contraseña por primera vez = Ionix2023+First
 
 
 ## Autores ✒️

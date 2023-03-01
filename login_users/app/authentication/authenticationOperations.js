@@ -11,9 +11,9 @@ let operations = {};
  * @param {*} user Informacion del usuario a generar login
  * @returns Codigo y data desde el Service
  */
-operations.userAuthentication = async (user) => {
+operations.userAuthOperations = async (user) => {
   try {
-    const data = await service.filterUser(user);
+    const data = await service.userAuthService(user);
 
     return await data;
   } catch (error) {
@@ -28,9 +28,9 @@ operations.userAuthentication = async (user) => {
  * @param {*} uuid Id de usuario a generar logout
  * @returns Codigo y data desde el Service
  */
-operations.logout = async (uuid) => {
+operations.logOutOperations = async (uuid) => {
   try {
-    const data = await service.logOutUser(uuid);
+    const data = await service.logOutService(uuid);
 
     return await data;
   } catch (error) {

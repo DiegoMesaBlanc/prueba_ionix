@@ -9,8 +9,8 @@ const router = express.Router();
 /**
  * APIs
  */
-router.post("/user/authentication", authenticationController.userAuthentication);
-router.post("/user/logout", md_auth.authenticated, authenticationController.logOut);
+router.post("/user/authentication", authenticationController.userAuthController);
+router.post("/user/logout", md_auth.authenticated, authenticationController.logOutController);
 
 
 router.post("/user", md_auth.authenticated, authenticationController.createUserController);

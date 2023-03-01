@@ -48,7 +48,7 @@ exports.assignTaskController = async (request, response) => {
 
     const res = await operations.assignTaskOperation(task);
 
-    if (res.code == codes.UNAUTHORIZED) {
+    if (res.code == codes.SUCCESS) {
       const message = { code: codes.SUCCESS, message: 'Success. Task assign' };
 
       return await responseManagement.SUCCESS(response, message);
@@ -77,7 +77,7 @@ exports.deleteTaskController = async (request, response) => {
 
     const res = await operations.deleteTaskOperation(task);
 
-    if (res.code == codes.UNAUTHORIZED) {
+    if (res.code == codes.SUCCESS) {
       const message = { code: codes.SUCCESS, message: 'Task deleted' };
 
       return await responseManagement.SUCCESS(response, message);
@@ -103,7 +103,7 @@ exports.updateTaskController = async (request, response) => {
 
     const res = await operations.updateTaskOperation(task);
 
-    if (res.code == codes.UNAUTHORIZED) {
+    if (res.code == codes.SUCCESS) {
       const message = { code: codes.SUCCESS, message: 'Task updated' };
 
       return await responseManagement.SUCCESS(response, message);
@@ -125,9 +125,9 @@ exports.updateTaskController = async (request, response) => {
 
 exports.getTasksController = async (request, response) => {
   try {
-    const res = await operations.getTasksOperation(request.tokenData.uuid);
+    const res = await operations.getTasksOperation(request.tokenData);
 
-    if (res.code == codes.UNAUTHORIZED) {
+    if (res.code == codes.SUCCESS) {
       const message = { code: codes.SUCCESS, tasks: res.data };
 
       return await responseManagement.SUCCESS(response, message);
@@ -149,7 +149,7 @@ exports.updateTaskEjecutorController = async (request, response) => {
 
     const res = await operations.updateTaskEjecutorOperation(data);
 
-    if (res.code == codes.UNAUTHORIZED) {
+    if (res.code == codes.SUCCESS) {
       const message = { code: codes.SUCCESS, message: 'Upload task' };
 
       return await responseManagement.SUCCESS(response, message);

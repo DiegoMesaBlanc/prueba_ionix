@@ -45,7 +45,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiMSIsInVzZXIiOiJEaWVnbyIsInByb2ZpbGUiOiIiLCJpYXQiOjE2Nzc0MjQ1NTUsImcCI6MTY3NzQyNDg1NX0.HgrUO7DmDsZ97mjXAsnNESyT2bKeHNp8w6182V76Ox8",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoxLCJ1c2VyIjoiRGllZ28iLCJwcm9maWxlIjoiMSIsImlhdCI6MTY3NzYzOTgwNSwiZXhwIjoxNjc3NjQzNDA1fQ.nK2SR15FFwYSSal99n2LITMQBY77SmamN4V2qwHlqCs",
 								"type": "text"
 							}
 						],
@@ -71,13 +71,13 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiMSIsInVzZXIiOiJEaWVnbyIsInByb2ZpbGUiOiIxIiwiaWF0IjoxNjc3NTE2NjI1LCJleHAiOjE2Nzc1MjAyMjV9.-PL1vnklw3vS4BIVzFZeRNlgxdJs2Te-sYtpplMA4eM",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoxLCJ1c2VyIjoiRGllZ28iLCJwcm9maWxlIjoiMSIsImlhdCI6MTY3NzY0NTk1NCwiZXhwIjoxNjc3NjQ5NTU0fQ.4A4G1Zp7b_bvckr0iyjL8pYatOfTLhVISrlx0CQsh9E",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"user\": \"Alberto\",\n    \"profile\": \"2\",\n    \"state\": \"Activo\"\n}",
+							"raw": "{\n    \"user\": \"Alberto\",\n    \"profile\": \"3\",\n    \"state\": \"Activo\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -105,7 +105,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"userId\": 1,\n    \"lastPassword\": \"Ionix2023+First\",\n    \"newPassword\": \"Ionix2023+\"\n}",
+							"raw": "{\n    \"user\": \"Alberto\",\n    \"lastPassword\": \"Ionix2023+First\",\n    \"newPassword\": \"Ionix2023+\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -133,19 +133,19 @@
 			"name": "Tasks",
 			"item": [
 				{
-					"name": "http://localhost:3001/task/create",
+					"name": "http://localhost:3001/task",
 					"request": {
 						"method": "POST",
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiMSIsInVzZXIiOiJEaWVnbyIsInByb2ZpbGUiOiIxIiwiaWF0IjoxNjc3NDU4NTI3LCJleHAiOjE2Nzc0NjIxMjd9.yVjdoToyiueIM8UpExlfTCSrF0GqF6z73kwnlEGvUtE",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoxLCJ1c2VyIjoiRGllZ28iLCJwcm9maWxlIjoiMSIsImlhdCI6MTY3NzY0NDY0MCwiZXhwIjoxNjc3NjQ4MjQwfQ.p6v2hV6-vdE5FiNrmWmQqWkNRBvv-ISEjVpGaRHyL6w",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"title\": \"Daily\",\n    \"description\": \"Realizar daily diariamente\",\n    \"finishDate\": \"29-02-2024\",\n    \"user\": { \"id\": 3, \"profile\": \"2\" }\n}",
+							"raw": "{\n    \"title\": \"Daily\",\n    \"description\": \"Realizar daily diariamente\",\n    \"finishDate\": \"29-02-2024\",\n    \"user\": { \"id\": 4, \"profile\": \"3\" }\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -173,7 +173,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiMyIsInVzZXIiOiJKb2hhbiIsInByb2ZpbGUiOiIyIiwiaWF0IjoxNjc3NDY1ODg4LCJleHAiOjE2Nzc0Njk0ODh9.kionizwOWF50Ggd3qNKNHjazqyw8NTCEyVXUcA3OsBc",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjo0LCJ1c2VyIjoiRWRpc3NvbiIsInByb2ZpbGUiOiIzIiwiaWF0IjoxNjc3NjM4MTI0LCJleHAiOjE2Nzc2NDE3MjR9.3W7r4A-t-jCFhX0IbIEGVyz1qyfsriAQnXMZk5ZJA44",
 								"type": "text"
 							}
 						],
@@ -199,7 +199,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiMSIsInVzZXIiOiJEaWVnbyIsInByb2ZpbGUiOiIxIiwiaWF0IjoxNjc3NDYwNTQ2LCJleHAiOjE2Nzc0NjQxNDZ9.56HI5dK2bg008jt-ScpNbsGXeQlK1LMpSfIgmhQ5aIo",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoxLCJ1c2VyIjoiRGllZ28iLCJwcm9maWxlIjoiMSIsImlhdCI6MTY3NzY0NjU0MywiZXhwIjoxNjc3NjUwMTQzfQ.adU6aKCkOdpe_yI3xIb13uo7hgpWmWGWdOtAXQ5g9go",
 								"type": "text"
 							}
 						],

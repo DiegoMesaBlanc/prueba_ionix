@@ -54,9 +54,9 @@ operations.updateTaskOperation = async (task) => {
 };
 
 
-operations.getTasksOperation = async (uuid) => {
+operations.getTasksOperation = async (info) => {
   try {
-    const data = await service.getTaskService(uuid);
+    const data = await service.getTaskService(info);
 
     return await data;
   } catch (error) {

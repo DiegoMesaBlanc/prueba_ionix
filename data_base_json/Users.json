@@ -5,9 +5,11 @@
       "user": "Diego",
       "password": "$2b$10$0U5lXftapphRBg3XT/mCZuAAD3QGEIueRDmCoBFwNX5A56UPXbjfO",
       "stateLogin": "",
-      "last3Pass": [],
+      "last3Pass": [
+        "$2b$10$0U5lXftapphRBg3XT/mCZuAAD3QGEIueRDmCoBFwNX5A56UPXbjfO"
+      ],
       "profile": "1",
-      "token": "",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoxLCJ1c2VyIjoiRGllZ28iLCJwcm9maWxlIjoiMSIsImlhdCI6MTY3NzY0NjU0MywiZXhwIjoxNjc3NjUwMTQzfQ.adU6aKCkOdpe_yI3xIb13uo7hgpWmWGWdOtAXQ5g9go",
       "insertDate": "26-02-2023",
       "updateDate": "26-02-2023",
       "state": "Activo"
@@ -29,7 +31,7 @@
     {
       "uuid": 3,
       "user": "Johan",
-      "password": "$2b$10$0U5lXftapphRBg3XT/mCZuAAD3QGEIueRDmCoBFwNX5A56UPXbjfO",
+      "password": "$2b$10$rsU.yXMvyNhO0jmPG7WQueR7ESBNLB/u1tEmhrlhLLEYWyVbiZRna",
       "stateLogin": "",
       "last3Pass": [],
       "profile": "2",
@@ -43,7 +45,9 @@
       "user": "Edisson",
       "password": "$2b$10$0U5lXftapphRBg3XT/mCZuAAD3QGEIueRDmCoBFwNX5A56UPXbjfO",
       "stateLogin": "",
-      "last3Pass": [],
+      "last3Pass": [
+        "$2b$10$0U5lXftapphRBg3XT/mCZuAAD3QGEIueRDmCoBFwNX5A56UPXbjfO"
+      ],
       "profile": "3",
       "token": "",
       "insertDate": "26-02-2023",
@@ -53,7 +57,7 @@
     {
       "uuid": 5,
       "user": "Javier",
-      "password": "$2b$10$0U5lXftapphRBg3XT/mCZuAAD3QGEIueRDmCoBFwNX5A56UPXbjfO",
+      "password": "$2b$10$rsU.yXMvyNhO0jmPG7WQueR7ESBNLB/u1tEmhrlhLLEYWyVbiZRna",
       "stateLogin": "",
       "last3Pass": [],
       "profile": "3",
@@ -65,13 +69,27 @@
     {
       "uuid": 6,
       "user": "Camilo",
-      "password": "$2b$10$0U5lXftapphRBg3XT/mCZuAAD3QGEIueRDmCoBFwNX5A56UPXbjfO",
+      "password": "$2b$10$rsU.yXMvyNhO0jmPG7WQueR7ESBNLB/u1tEmhrlhLLEYWyVbiZRna",
       "stateLogin": "",
       "last3Pass": [],
       "profile": "3",
       "token": "",
       "insertDate": "26-02-2023",
       "updateDate": "26-02-2023",
+      "state": "Activo"
+    },
+    {
+      "uuid": 35,
+      "user": "Alberto",
+      "password": "$2b$10$bWD2fdP3mlLiDZr1fmOG0egZ4AArQX.M072IBDtCQjhs084BEt1U2",
+      "stateLogin": "",
+      "last3Pass": [
+        "$2b$10$bWD2fdP3mlLiDZr1fmOG0egZ4AArQX.M072IBDtCQjhs084BEt1U2"
+      ],
+      "profile": "3",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjozNSwidXNlciI6IkFsYmVydG8iLCJwcm9maWxlIjoiMyIsImlhdCI6MTY3NzY0NjQyNCwiZXhwIjoxNjc3NjUwMDI0fQ.7rOgV0a_cbM-1hE4ANTpvbSx4T14u40R-sSrGK03pzM",
+      "insertDate": "28-02-2023",
+      "updateDate": "",
       "state": "Activo"
     }
   ]

@@ -13,13 +13,13 @@ const codes = require("../common/enums/codesResponse");
  * @param {*} response Respuesta de nuestro servicio
  * @returns Respuesta del proceso de login
  */
-exports.userAuthentication = async (request, response) => {
+exports.userAuthController = async (request, response) => {
   try {
     const user = { userName: request.body.userName || "", password: request.body.password || "" };
     // const pass = await encrypt.generateHashPassword(user.password);
     // console.log(pass);
 
-    const res = await operations.userAuthentication(user);
+    const res = await operations.userAuthOperations(user);
 
     //usuario encontrado en la base de datos
     if (res.code == codes.SUCCESS) {
@@ -29,7 +29,7 @@ exports.userAuthentication = async (request, response) => {
       };
 
       return await responseManagement.SUCCESS(response, message);
-    } if (res.code == codes.UNPROCESSABLE_ENTITY) {
+    } else if (res.code == codes.UNPROCESSABLE_ENTITY) {
       return await responseManagement.UNPROCESSABLE_ENTITY(response, 'Password not already update yet.');
     }
 
@@ -47,9 +47,9 @@ exports.userAuthentication = async (request, response) => {
  * @param {*} response Respuesta de nuestro servicio
  * @returns Respuesta del proceso de logout
  */
-exports.logOut = async (request, response) => {
+exports.logOutController = async (request, response) => {
   try {
-    const res = await operations.logout(request.tokenData.uuid);
+    const res = await operations.logOutOperations(request.tokenData.uuid);
 
     if (res.code == codes.SUCCESS) {
       const message = { code: codes.SUCCESS, message: 'Logout success' };
@@ -71,7 +71,7 @@ exports.createUserController = async (request, response) => {
 
     const res = await operations.createUserOperation(user_data);
 
-    if (res.code == codes.UNAUTHORIZED) {
+    if (res.code == codes.SUCCESS) {
       const message = { code: codes.SUCCESS, message: 'Success user created' };
 
       return await responseManagement.SUCCESS(response, message);

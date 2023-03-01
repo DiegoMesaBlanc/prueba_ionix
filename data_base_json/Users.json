@@ -77,20 +77,6 @@
       "insertDate": "26-02-2023",
       "updateDate": "26-02-2023",
       "state": "Activo"
-    },
-    {
-      "uuid": 35,
-      "user": "Alberto",
-      "password": "$2b$10$bWD2fdP3mlLiDZr1fmOG0egZ4AArQX.M072IBDtCQjhs084BEt1U2",
-      "stateLogin": "",
-      "last3Pass": [
-        "$2b$10$bWD2fdP3mlLiDZr1fmOG0egZ4AArQX.M072IBDtCQjhs084BEt1U2"
-      ],
-      "profile": "3",
-      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjozNSwidXNlciI6IkFsYmVydG8iLCJwcm9maWxlIjoiMyIsImlhdCI6MTY3NzY0NjQyNCwiZXhwIjoxNjc3NjUwMDI0fQ.7rOgV0a_cbM-1hE4ANTpvbSx4T14u40R-sSrGK03pzM",
-      "insertDate": "28-02-2023",
-      "updateDate": "",
-      "state": "Activo"
     }
   ]
 }
